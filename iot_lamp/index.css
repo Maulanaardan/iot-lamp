@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Ruslan+Display&display=swap");
+
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 40%;
+  border: 3px solid black;
+  height: 100%;
+  background-color: rgb(229, 230, 230);
+  position: relative;
+}
+
+nav {
+  background-color: rgb(59, 59, 59);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 6rem;
+  width: 100%;
+}
+
+.nav-name {
+  font-family: "Quantico", sans-serif;
+  font-size: 1.3rem;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-logo {
+  font-family: "Ruslan Display", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  color: white;
+}
+
+.main-section {
+  padding: 3rem 0 8rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.fitur-list {
+  width: 35%; /* kurang dari 50% supaya ada jarak */
+  height: auto;
+  border: 4px solid black;
+  border-radius: 20px;
+  background-color: rgb(104, 151, 192);
+  transition: all 0.3s ease-in-out;
+}
+
+.fitur-list:hover {
+  transform: scale(1.1);
+  background-color: rgb(63, 98, 128);
+}
+
+.bottom-link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  background-color: rgb(59, 59, 59);
+}
+
+.bottom-link ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+}
+
+.bottom-link a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  font-family: "Quantico", sans-serif;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.bottom-link a:hover {
+  transform: skewX(15deg);
+}
